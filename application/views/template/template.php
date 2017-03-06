@@ -49,7 +49,7 @@ $('#myInput').focus()
                             <li class="">
                                 <a class="" href="<?php echo base_url();?>">Beranda</a>
                             </li>
-                            <li><a href="<?php echo base_url('welcome/sejarah')?>">Sejarah</a></li>
+                            <li><a href="<?php echo base_url()?>welcome/sejarah">Sejarah</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kebudayaan</a>
                                 <ul class="dropdown-menu sf-menu">
@@ -67,7 +67,7 @@ $('#myInput').focus()
         </header>
     </div>
 
-    
+
 </head>
 
 <body>

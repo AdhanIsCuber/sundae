@@ -6,24 +6,24 @@ class Welcome extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 		$this->load->model('M_berita');
-		
+
 	}
 
-	function index() {
+	public function index() {
 		$this->template->load('template/template','index/v_beranda');
 	}
 
-	function sejarah() {
+	public function sejarah() {
 		$this->template->load('template/template','index/v_sejarah');
 	}
 
-	function berita() {
+	public function berita() {
 		$data['query'] = $this->M_berita->read_berita();
 
 		$this->template->load('template/template','index/v_berita', $data);
 	}
 
-	function detail() {
+	public function detail() {
 		$this->template->load('template/template','kebudayaan/v_detail');
 	}
 
